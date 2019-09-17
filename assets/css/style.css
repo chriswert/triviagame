@@ -1,0 +1,49 @@
+body {
+    background-image: url("/assets/images/BXgWV1x-pebble-beach-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+#title {
+    font-size: 100px;
+    color: rgb(206, 241, 251);
+    text-decoration: underline;
+    font-family: fantasy;
+    text-shadow: 8px 8px 10px black;
+}
+.container {
+    background-color: white;
+    opacity: 0.65; 
+    border: 5px solid black; 
+    margin-bottom: 40px;     
+}
+.timerBox{
+    margin-top: 20px;
+    font-size: 32px;
+    font-family: Stencil Std, fantasy;
+
+}
+.scoreBox {    
+    padding: 20px 50px 20px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: Stencil Std, fantasy;
+}
+.questionBox {
+  font-size: 18px;
+  font-family: FreeMono, monospace; 
+  font-weight: bold;
+  margin-top: 20px;
+}
+.choiceBox {
+  font-size: 16px;
+  font-family: FreeMono, monospace; 
+  font-weight: bold;
+}
+

@@ -1,15 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel = "stylesheet" type = "text/css" href="/assets/css/style.css">
-    <script src = "assets/javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
 </head>
+
 <body>
-    
-    
+    <div class="row">
+        <div class="col-12">
+            <section class="header">
+                <h1 id="title">Pebble Beach Trivia</h1>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <section class="timerBox">Time:<span id="timer"></span></section>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group questionBox">
+                        <label for="exampleFormControlSelect2" class="question">How many US Opens has Pebble Beach Golf
+                            Links hosted?</label>
+                    </div>
+            </div>
+        </div>
+        <div class="row choiceBox">
+            <div class="col-12">
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Five</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Two</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline3">Six</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline4">Nine</label>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group questionBox">
+                        <label for="exampleFormControlSelect2" class="question">What hole did Tom Watson chip in to help
+                            him win the 1982 US Open?</label>
+                    </div>
+            </div>
+        </div>
+        <div class="row choiceBox">
+            <div class="col-12">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline5">Hole #8</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline6" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline6">Hole #14
+                    </label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline7" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline7">Hole #7</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline8" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline8">Hole #17
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group questionBox">
+                        <label for="exampleFormControlSelect2" class="question">What hole did Jack Nicklas say was his
+                            favorite approach chot in all of golf?</label>
+                    </div>
+            </div>
+        </div>
+        <div class="row choiceBox">
+            <div class="col-12">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline9" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline9">Hole #5</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline10" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline10">Hole #8</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline11" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline11">Hole #18</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline12" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline12">Hole #10</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group questionBox">
+                        <label for="exampleFormControlSelect2" class="question">What was the original name for the AT&T
+                            Pebble Beach Pro-Am?</label>
+                    </div>
+            </div>
+        </div>
+        <div class="row choiceBox">
+            <div class="col-12">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline13" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline13">Bing Crosby National Pro-Am</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline14" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline14">Bay Area National Pro-Am</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline15" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline15">Monterey Bay Classic</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline16" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline16">Clark Gable National Pro-Am</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row scoreBox">
+            <div class="col-4">
+                <div class="score">Correct Answers:</div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>
