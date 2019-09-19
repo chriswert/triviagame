@@ -1,30 +1,14 @@
 $(document).ready(function() {
 
-   var questions = [
-       {
-       question: "What is the capital of Arizona?",
-       answer: "Phoenix"
-       },
-       {
-        question: "What is the capital of Colorado?",
-        answer: "Denver"
-       }
-    ];
+var score = 0;
 
-    var timerMeaning = 10;
+   //create counter for start of game.
+   //reset counter at end of game
 
-    var score = 0;
-
-    function countdownTimer(seconds){
-      
-        for (i = seconds; i >= 1; i--){
-                setInterval (countdownTimer, 1000);
-    }
-    };   
-  
-    countdownTimer(10);
-
-
-
-
+var seconds = document.getElementById('countdown').textContent;
+var countdown = setInterval(function() {
+    seconds--;
+    document.getElementById('countdown').textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+}, 3000),
 });
