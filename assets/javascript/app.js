@@ -11,24 +11,7 @@ $(document).ready(function() {
     if(seconds --> 0) setTimeout(countdown, 2000)
 })();
 
-var correctCount = function(str) {
 
-    var counter = 0; 
-    var correctAnswers = ["#customRadioInline3","#customRadioInline8","#customRadioInline10","#customRadioInline13"];
-   
-    for (let i = 0; i < str.length; i++) { 
-     
-
-       
-      if (correctAnswer.indexOf(str[i]) > -1) { 
-       
-          counter++; 
-      }
-        
-    }   
-    return counter
-
-};
  
     //create function to select correct answer from each question.
 
