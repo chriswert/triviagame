@@ -1,14 +1,54 @@
 $(document).ready(function() {
 
-var score = 0;
+    var score = 0;
 
    //create counter for start of game.
    //reset counter at end of game
 
-var seconds = document.getElementById('countdown').textContent;
-var countdown = setInterval(function() {
-    seconds--;
-    document.getElementById('countdown').textContent = seconds;
-    if (seconds <= 0) clearInterval(countdown);
-}, 3000),
+   var seconds = 20, $seconds = document.querySelector('#countdown');
+(function countdown() {
+    $seconds.textContent = seconds + ' second' + (seconds == 1 ?  '' :  's')
+    if(seconds --> 0) setTimeout(countdown, 2000)
+})();
+
+var correctCount = function(str) {
+
+    var counter = 0; 
+    var correctAnswers = ["#customRadioInline3","#customRadioInline8","#customRadioInline10","#customRadioInline13"];
+   
+    for (let i = 0; i < str.length; i++) { 
+     
+
+       
+      if (correctAnswer.indexOf(str[i]) > -1) { 
+       
+          counter++; 
+      }
+        
+    }   
+    return counter
+
+};
+ 
+    //create function to select correct answer from each question.
+
+
+
+    //add correct answer totals to the Correct Answer Div.
+    var correctCount = function(str) {
+
+        var counter = 0; 
+        var correctAnswers = ["#customRadioInline3","#customRadioInline8","#customRadioInline10","#customRadioInline13"];
+       
+        for (let i = 0; i < str.length; i++) {     
+           
+          if (correctAnswer.indexOf(str[i]) > -1) { 
+           
+              counter++; 
+          }
+            
+        }   
+        return counter
+    
+    };
 });
